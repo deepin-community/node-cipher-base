@@ -1,0 +1,30 @@
+Source: node-cipher-base
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-inherits <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-cipher-base
+Vcs-Git: https://salsa.debian.org/js-team/node-cipher-base.git
+Homepage: https://github.com/crypto-browserify/cipher-base
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-cipher-base
+Architecture: all
+Depends: ${misc:Depends}
+ , node-inherits
+ , node-safe-buffer
+ , nodejs
+Description: abstract base class for crypto-streams
+ This module implements an abstract base class to inherit from,
+ for creating node crypto streams.
+ .
+ This module follows the same API as Node.js crypto streams API.
+ .
+ Node.js is an event-based server-side JavaScript engine.

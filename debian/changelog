@@ -1,0 +1,66 @@
+node-cipher-base (1.0.4-6) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dpkg-dev.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Mon, 01 Nov 2021 11:43:57 +0100
+
+node-cipher-base (1.0.4-5) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-inherits,
+      node-safe-buffer, node-tap, node-tape and nodejs.
+    + node-cipher-base: Drop versioned constraint on node-inherits,
+      node-safe-buffer and nodejs in Depends.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 02:21:31 +0100
+
+node-cipher-base (1.0.4-4) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Bump debhelper and policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 04 Sep 2019 16:12:33 +0200
+
+node-cipher-base (1.0.4-3) unstable; urgency=medium
+
+  * Add node-taps as build depend.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 18 May 2018 13:53:53 +0200
+
+node-cipher-base (1.0.4-2) unstable; urgency=medium
+
+  * Bump policy and compat (no changes)
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 18 May 2018 11:18:12 +0200
+
+node-cipher-base (1.0.4-1) unstable; urgency=medium
+
+  * New upstream version:
+    + Use safe buffer in order to improve security
+  * Bump policy: no change
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 12 Aug 2017 23:24:50 +0200
+
+node-cipher-base (1.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #854114)
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 18 Apr 2017 23:00:01 +0200
