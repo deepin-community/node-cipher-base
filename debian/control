@@ -8,7 +8,7 @@ Build-Depends: debhelper-compat (= 13)
  , node-inherits <!nocheck>
  , node-safe-buffer <!nocheck>
  , node-tape <!nocheck>
-Standards-Version: 4.6.0
+Standards-Version: 4.7.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-cipher-base
 Vcs-Git: https://salsa.debian.org/js-team/node-cipher-base.git
 Homepage: https://github.com/crypto-browserify/cipher-base
@@ -20,7 +20,7 @@ Architecture: all
 Depends: ${misc:Depends}
  , node-inherits
  , node-safe-buffer
- , nodejs
+ , nodejs:any
 Description: abstract base class for crypto-streams
  This module implements an abstract base class to inherit from,
  for creating node crypto streams.
